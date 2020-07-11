@@ -1,0 +1,13 @@
+a.  	Mounting (pada saat suatu komponen dipasang dari suatu halaman)
+-          constructor : hal pertama yang dipanggil, berisi pendifinisian state dan pengambilan data props
+-          getDerivedStateFromProps : tempat dimana mengubah nilai state berdasarkan props yang diterima
+-          render : method yang wajib ditulis. Tempat dimana komponen-komponen akan ditampilkan pada halaman
+-          componentDidMount : akan menjalankan statement tepat setelah komponen-komponen dipasang
+b.  	Updating (memodifikasi nilai dari suatu komponen)
+-          getDerivedStateFromProps : idem
+-          shouldComponentUpdate : fungsi yang memberikan nilai Boolean. True artinya update akan dilanjutkan ke method render, sedangkan false artinya permintaan update akan dibatalkan.
+-          render : idem
+-          getSnapshotBeforeUpdate : akan menyimpan nilai props dan state tepat sebelum dilakukan update
+-          componentDidUpdate : akan menjalankan statement tepat setelah komponen-komponen diupdate
+c.   	Unmounting (mencopot suatu komponen dari halaman)
+-          componentWillUnmount : suatu bentuk konfirmasi apakah suatu komponen akan benar-benar dicopot dari halaman atau tidak
